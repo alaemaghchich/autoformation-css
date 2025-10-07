@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
-
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.486);
+    border-radius: 50%;
+}
 header h1 {
     color: #ffcc00;
     text-shadow: 20px 20px 50px black;
 }
-
 fieldset {
     border: 2px solid #ffcc00;
     width: 60%;
@@ -17,58 +19,17 @@ fieldset {
     background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
 }
-
 legend {
     font-weight: bold;
     color: #5a4bfc;
 }
-
-
 table {
     margin: 20px auto;
-    border-collapse: collapse;
     background-color: rgba(255,255,255,0.1);
 }
-
 td {
-    padding: 10px 20px;
-    text-align: center;
+    padding: 10px 20px;   
 }
-
-
-table:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 40%;
-}
-table:nth-of-type(2) td {
-    border: 2px solid #00ffcc;
-    font-weight: bold;
-}
-
-
-.hobbies {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 20px;
-}
-
-.hobbies p {
-    background-color: rgba(0,0,0,0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #fff;
-}
-
-footer {
-    margin-top: 30px;
-}
-
-footer img {
-    transition: transform 0.3s;
-}
-
 footer img:hover {
     transform: scale(1.3);
 }
