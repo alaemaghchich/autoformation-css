@@ -1,0 +1,40 @@
+
+
+.contain{
+  width: 30px;
+   height: 30px;
+    background-color: aliceblue;
+  animation: anime 2s infinite;
+}
+
+
+
+.test{
+  width: 2px;
+  height: 3px;
+  animation: test 2s infinite;
+}
+@keyframes anime {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(0, 270px) rotate(90deg);
+  }
+  50% {
+    transform: translate(270px, 270px) rotate(180deg);
+  }
+  75% {
+    transform: translate(270px, 0) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }}
+@keyframes test{
+  from{background: rgb(255, 0, 0);}
+  20%{background: rgb(246, 255, 0);}
+  40%{background: rgb(0, 164, 33);}
+  60%{background: rgb(0, 21, 255);}
+  80%{background: rgb(255, 0, 204);}
+  to{background: rgb(255, 0, 0); width: 100%;}
+}
